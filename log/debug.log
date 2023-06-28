@@ -1,0 +1,88 @@
+2023-06-28 12:42:10  [ main:0 ] - [ DEBUG ]  setsid exited with exit code 0
+2023-06-28 12:42:10  [ main:246 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+2023-06-28 12:42:10  [ main:252 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2023-06-28 12:42:10  [ main:253 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2023-06-28 12:42:10  [ main:254 ] - [ DEBUG ]  field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+2023-06-28 12:42:10  [ main:254 ] - [ DEBUG ]  field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+2023-06-28 12:42:10  [ main:255 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2023-06-28 12:42:10  [ main:280 ] - [ DEBUG ]  Setting hadoop.security.token.service.use_ip to true
+2023-06-28 12:42:10  [ main:311 ] - [ DEBUG ]   Creating new Groups object
+2023-06-28 12:42:10  [ main:314 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2023-06-28 12:42:10  [ main:315 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+2023-06-28 12:42:10  [ main:315 ] - [ DEBUG ]  java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2023-06-28 12:42:10  [ main:315 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-06-28 12:42:10  [ main:316 ] - [ DEBUG ]  Falling back to shell based
+2023-06-28 12:42:10  [ main:317 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2023-06-28 12:42:10  [ main:350 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2023-06-28 12:42:10  [ main:359 ] - [ DEBUG ]  Hadoop login
+2023-06-28 12:42:10  [ main:360 ] - [ DEBUG ]  hadoop login commit
+2023-06-28 12:42:10  [ main:366 ] - [ DEBUG ]  Using local user: UnixPrincipal: plutoer
+2023-06-28 12:42:10  [ main:366 ] - [ DEBUG ]  Using user: "UnixPrincipal: plutoer" with name: plutoer
+2023-06-28 12:42:10  [ main:366 ] - [ DEBUG ]  User entry: "plutoer"
+2023-06-28 12:42:10  [ main:367 ] - [ DEBUG ]  UGI loginUser: plutoer (auth:SIMPLE)
+2023-06-28 12:42:10  [ main:402 ] - [ DEBUG ]  Starting: Acquiring creator semaphore for file:///
+2023-06-28 12:42:10  [ main:403 ] - [ DEBUG ]  Acquiring creator semaphore for file:///: duration 0:00.000s
+2023-06-28 12:42:10  [ main:404 ] - [ DEBUG ]  Starting: Creating FS file:///
+2023-06-28 12:42:10  [ main:404 ] - [ DEBUG ]  Loading filesystems
+2023-06-28 12:42:10  [ main:415 ] - [ DEBUG ]  file:// = class org.apache.hadoop.fs.LocalFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-common/3.3.5/hadoop-common-3.3.5.jar
+2023-06-28 12:42:10  [ main:420 ] - [ DEBUG ]  viewfs:// = class org.apache.hadoop.fs.viewfs.ViewFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-common/3.3.5/hadoop-common-3.3.5.jar
+2023-06-28 12:42:10  [ main:422 ] - [ DEBUG ]  har:// = class org.apache.hadoop.fs.HarFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-common/3.3.5/hadoop-common-3.3.5.jar
+2023-06-28 12:42:10  [ main:423 ] - [ DEBUG ]  http:// = class org.apache.hadoop.fs.http.HttpFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-common/3.3.5/hadoop-common-3.3.5.jar
+2023-06-28 12:42:10  [ main:424 ] - [ DEBUG ]  https:// = class org.apache.hadoop.fs.http.HttpsFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-common/3.3.5/hadoop-common-3.3.5.jar
+2023-06-28 12:42:10  [ main:432 ] - [ DEBUG ]  hdfs:// = class org.apache.hadoop.hdfs.DistributedFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.5/hadoop-hdfs-client-3.3.5.jar
+2023-06-28 12:42:10  [ main:443 ] - [ DEBUG ]  webhdfs:// = class org.apache.hadoop.hdfs.web.WebHdfsFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.5/hadoop-hdfs-client-3.3.5.jar
+2023-06-28 12:42:10  [ main:444 ] - [ DEBUG ]  swebhdfs:// = class org.apache.hadoop.hdfs.web.SWebHdfsFileSystem from /home/plutoer/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.5/hadoop-hdfs-client-3.3.5.jar
+2023-06-28 12:42:10  [ main:444 ] - [ DEBUG ]  Looking for FS supporting file
+2023-06-28 12:42:10  [ main:444 ] - [ DEBUG ]  looking for configuration option fs.file.impl
+2023-06-28 12:42:10  [ main:458 ] - [ DEBUG ]  Looking in service filesystems for implementation class
+2023-06-28 12:42:10  [ main:458 ] - [ DEBUG ]  FS for file is class org.apache.hadoop.fs.LocalFileSystem
+2023-06-28 12:42:10  [ main:466 ] - [ DEBUG ]  Creating FS file:///: duration 0:00.060s
+2023-06-28 12:42:10  [ main:472 ] - [ DEBUG ]  Starting: Acquiring creator semaphore for hdfs://localhost:9000/user/plutoer/Project/task3_output/iteration/iteration_1
+2023-06-28 12:42:10  [ main:473 ] - [ DEBUG ]  Acquiring creator semaphore for hdfs://localhost:9000/user/plutoer/Project/task3_output/iteration/iteration_1: duration 0:00.001s
+2023-06-28 12:42:10  [ main:473 ] - [ DEBUG ]  Starting: Creating FS hdfs://localhost:9000/user/plutoer/Project/task3_output/iteration/iteration_1
+2023-06-28 12:42:10  [ main:474 ] - [ DEBUG ]  Looking for FS supporting hdfs
+2023-06-28 12:42:10  [ main:474 ] - [ DEBUG ]  looking for configuration option fs.hdfs.impl
+2023-06-28 12:42:10  [ main:474 ] - [ DEBUG ]  Looking in service filesystems for implementation class
+2023-06-28 12:42:10  [ main:474 ] - [ DEBUG ]  FS for hdfs is class org.apache.hadoop.hdfs.DistributedFileSystem
+2023-06-28 12:42:10  [ main:507 ] - [ DEBUG ]  dfs.client.use.legacy.blockreader.local = false
+2023-06-28 12:42:10  [ main:507 ] - [ DEBUG ]  dfs.client.read.shortcircuit = false
+2023-06-28 12:42:10  [ main:507 ] - [ DEBUG ]  dfs.client.domain.socket.data.traffic = false
+2023-06-28 12:42:10  [ main:507 ] - [ DEBUG ]  dfs.domain.socket.path = 
+2023-06-28 12:42:10  [ main:532 ] - [ DEBUG ]  Sets dfs.client.block.write.replace-datanode-on-failure.min-replication to 0
+2023-06-28 12:42:10  [ main:544 ] - [ DEBUG ]  multipleLinearRandomRetry = null
+2023-06-28 12:42:10  [ main:567 ] - [ DEBUG ]  rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@12299890
+2023-06-28 12:42:10  [ main:578 ] - [ DEBUG ]  getting client out of cache: Client-0a044cb655d94588bfef1740b0f94517
+2023-06-28 12:42:11  [ main:937 ] - [ DEBUG ]  Both short-circuit local reads and UNIX domain socket are disabled.
+2023-06-28 12:42:11  [ main:945 ] - [ DEBUG ]  DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+2023-06-28 12:42:11  [ main:947 ] - [ DEBUG ]  Creating FS hdfs://localhost:9000/user/plutoer/Project/task3_output/iteration/iteration_1: duration 0:00.474s
+2023-06-28 12:42:11  [ main:951 ] - [ DEBUG ]  PrivilegedAction [as: plutoer (auth:SIMPLE)][action: org.apache.hadoop.mapreduce.Job$10@4c36250e]
+java.lang.Exception
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1896)
+	at org.apache.hadoop.mapreduce.Job.connect(Job.java:1643)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1672)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1696)
+	at task4.task4Driver.main(task4Driver.java:43)
+2023-06-28 12:42:11  [ main:956 ] - [ DEBUG ]  PrivilegedActionException as: plutoer (auth:SIMPLE)
+java.io.IOException: Cannot initialize Cluster. Please check your configuration for mapreduce.framework.name and the correspond server addresses.
+	at org.apache.hadoop.mapreduce.Cluster.initialize(Cluster.java:116)
+	at org.apache.hadoop.mapreduce.Cluster.<init>(Cluster.java:109)
+	at org.apache.hadoop.mapreduce.Cluster.<init>(Cluster.java:102)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1647)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1643)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1899)
+	at org.apache.hadoop.mapreduce.Job.connect(Job.java:1643)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1672)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1696)
+	at task4.task4Driver.main(task4Driver.java:43)
+2023-06-28 12:42:11  [ shutdown-hook-0:971 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.hdfs.DistributedFileSystem.close(DistributedFileSystem.java:1518)); Key: (plutoer (auth:SIMPLE))@hdfs://localhost:9000; URI: hdfs://localhost:9000; Object Identity Hash: 4d8d72f0
+2023-06-28 12:42:11  [ shutdown-hook-0:972 ] - [ DEBUG ]  stopping client from cache: Client-0a044cb655d94588bfef1740b0f94517
+2023-06-28 12:42:11  [ shutdown-hook-0:973 ] - [ DEBUG ]  removing client from cache: Client-0a044cb655d94588bfef1740b0f94517
+2023-06-28 12:42:11  [ shutdown-hook-0:974 ] - [ DEBUG ]  stopping actual client because no more references remain: Client-0a044cb655d94588bfef1740b0f94517
+2023-06-28 12:42:11  [ shutdown-hook-0:974 ] - [ DEBUG ]  Stopping client
+2023-06-28 12:42:11  [ shutdown-hook-0:974 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.fs.FilterFileSystem.close(FilterFileSystem.java:529)); Key: (plutoer (auth:SIMPLE))@file://; URI: file:///; Object Identity Hash: 6366dd03
+2023-06-28 12:42:11  [ shutdown-hook-0:974 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.fs.RawLocalFileSystem.close(RawLocalFileSystem.java:895)); Key: null; URI: file:///; Object Identity Hash: 6c9f8784
+2023-06-28 12:42:11  [ shutdown-hook-0:975 ] - [ DEBUG ]  Invalidating all cached KeyProviders.
+2023-06-28 12:42:11  [ Thread-3:976 ] - [ DEBUG ]  Completed shutdown in 0.015 seconds; Timeouts: 0
+2023-06-28 12:42:11  [ Thread-3:991 ] - [ DEBUG ]  ShutdownHookManager completed shutdown.

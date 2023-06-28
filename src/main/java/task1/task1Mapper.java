@@ -94,7 +94,7 @@ public class task1Mapper
                     if((prevLexeme!="")&&nameDict.containsKey(prevLexeme))
                     {
                         //此时找到了最大匹配词素，输出名字到names中
-                        names += (nameDict.get(prevLexeme) + ',');
+                        names += (nameDict.get(prevLexeme)+ ',');
                         nameNum += 1;
                     }
                     prevLexeme = "";
