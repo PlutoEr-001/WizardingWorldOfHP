@@ -20,7 +20,7 @@ public class task4Reducer
                     //Graph
                     neighbors=secondPart.substring(secondPart.indexOf('#')+1);
                 }else{
-                    secondPart=secondPart.substring(secondPart.indexOf('@')+1).trim();
+                    secondPart=secondPart.substring(secondPart.indexOf('&')+1).trim();
                     sum+=Float.parseFloat(secondPart);
                 }
             }

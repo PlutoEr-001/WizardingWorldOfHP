@@ -1,8 +1,8 @@
 package task4;
-
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
+import task4.StringFloat;
 
 import java.io.IOException;
 

@@ -18,7 +18,7 @@ public class task4Mapper extends
             Map<String,Float> neighbors=node.getNeighbors();
             for (Map.Entry<String, Float> entry : neighbors.entrySet()) {
                 Float res=entry.getValue()*node.getPr();
-                context.write(new Text(entry.getKey()),new Text("@"+Float.toString(res)));
+                context.write(new Text(entry.getKey()),new Text("&"+Float.toString(res)));
             }
         }catch (Exception e) {
             e.printStackTrace();

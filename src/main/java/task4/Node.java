@@ -22,8 +22,8 @@ public class Node {
         neighbors=new HashMap<>();
         nodeName=parts[0].trim();
         for(String neighbor:neighbors_temp){
-            String name=neighbor.substring(0,neighbor.indexOf(','));
-            Float weigh=Float.parseFloat(neighbor.substring(neighbor.indexOf(',')+1));
+            String name=neighbor.substring(0,neighbor.indexOf('@'));
+            Float weigh=Float.parseFloat(neighbor.substring(neighbor.indexOf('@')+1));
             neighbors.put(name,weigh);
         }
     }
@@ -35,7 +35,7 @@ public class Node {
         out.append('[');
         for (Map.Entry<String, Float> entry : neighbors.entrySet()) {
             out.append(entry.getKey());
-            out.append(',');
+            out.append('@');
             out.append(entry.getValue());
             out.append("|");
         }
